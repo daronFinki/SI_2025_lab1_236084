@@ -1,1 +1,4 @@
-# SI_2025_lab1_236084
+name: Daron
+surname: Pankovski
+index: 236084
+
