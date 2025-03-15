@@ -1,4 +1,1 @@
-name: Daron
-surname: Pankovski
-index: 236084
-
+Daron Pankovski 236084

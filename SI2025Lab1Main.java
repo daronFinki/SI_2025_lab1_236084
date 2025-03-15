@@ -74,11 +74,10 @@ class TaskManager {
         {
             if (task.isCompleted()) {
                 completedTasks.add(task);
-                System.out.println(task);
             }
+            return completedTasks;
         }
-        return completedTasks;
-
+        
     // 3. List tasks sorted by name
     public void sortTasksByName() {
         // TODO: Implement sorting logic
