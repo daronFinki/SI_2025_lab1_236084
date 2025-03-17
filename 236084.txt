@@ -1,0 +1,138 @@
+1. Instalacija na git i kreiranje na profil na GitHub
+   Download 64-bit Git for Windows Setup from https://git-scm.com/downloads/win
+
+2. GitHub - Right sidebar - Settings
+   Repositories - Repository default branch - set to "master"
+
+3. Kreiranje na remote repository na GitHub
+   SI_2025_lab1_236084 - se izbira da bide private
+   https://github.com/daronFinki/SI_2025_lab1_236084
+
+4. Kreiram folder SI_2025_lab1_236084
+   C:\finki\si\SI_2025_lab1_236084
+   Inicijalizacija
+   git init
+   Initialized empty Git repository in C:/finki/si/SI_2025_lab1_236084/.git/
+
+5. Povrzuvanje so remote repository na GitHub
+   git remote add origin https://github.com/daronFinki/SI_2025_lab1_236084
+
+6. notepad README.md
+   Daron Pankovski 236084
+   git add README.md
+   git commit -m "Initial commit"
+      [3-list-tasks-sorted-by-name ef99b0d] Initial commit
+      1 file changed, 1 insertion(+), 4 deletions(-)
+
+7. Dodadena datoteka SI2025Lab1Main.java
+   git add SI2025Lab1Main.java
+   git commit -m "Add starter code"
+      [3-list-tasks-sorted-by-name da12f8d] Add starter code
+      1 file changed, 126 insertions(+)
+
+8. Sinhronizacija so remote repository
+   git push -u origin master
+      	Enumerating objects: 7, done.
+	Counting objects: 100% (7/7), done.
+	Delta compression using up to 12 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (7/7), 1.16 KiB | 1.16 MiB/s, done.
+	Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+	To https://github.com/daronFinki/SI_2025_lab1_236084
+	 * [new branch]      master -> master
+	branch 'master' set up to track 'origin/master'.
+
+9. Kreiran Project Kanban - SI2025
+
+10.Vo Backlog se dodaden 9 issues.
+
+11.Izbrani tri issues (boldiranite)
+   Preneseni vo InProgres kolonata
+
+12.Kreirani tri branch-es za sekoj od ovie tri issues
+    Dava upatstvo:
+      Run the following commands in your local clone.
+      git fetch origin
+      git checkout 1-remove-a-task-by-name
+
+13.Se kreiraat tri granki od remote repository
+   git fetch origin
+      	remote: Enumerating objects: 5, done.
+	remote: Counting objects: 100% (5/5), done.
+	remote: Compressing objects: 100% (2/2), done.
+	remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+	Unpacking objects: 100% (3/3), 953 bytes | 79.00 KiB/s, done.
+	From https://github.com/daronFinki/SI_2025_lab1_236084
+	 * [new branch]      1-remove-a-task-by-name -> origin/1-remove-a-task-by-name
+	 * [new branch]      5-filter-tasks-by-category -> origin/5-filter-tasks-by-category
+	 * [new branch]      7-count-tasks-per-category -> origin/7-count-tasks-per-category
+	   b29de85..62c22da  master     -> origin/master
+14. git checkout -b 1-remove-a-task-by-name origin/1-remove-a-task-by-name
+      	branch '1-remove-a-task-by-name' set up to track 'origin/1-remove-a-task-by-name'.
+	Switched to a new branch '1-remove-a-task-by-name'
+15. Implementacija na kodot na funkcijata removeTask()
+    public void removeTask(String name)
+
+16.Commit na promenata
+   git add SI2025Lab1Main.java
+   git commit -m "Updated SI2025Lab1Main.java to implement removeTask"
+	[1-remove-a-task-by-name] Updated SI2025Lab1Main.java to implement removeTask
+	 1 file changed, 133 insertions(+)
+
+17.Sinhronizacija so remote repository
+   git push origin 1-remove-a-task-by-name
+      	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 12 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (3/3), 1.28 KiB | 1.28 MiB/s, done. 
+	Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+	To https://github.com/daronFinki/SI_2025_lab1_236084
+	   62c22da..2bf9235  1-remove-a-task-by-name -> 1-remove-a-task-by-name
+
+18.Pull request na remote.
+   Vo GitHub se pojavuva kopce Compare / Pull request
+   koe se stiska da se zema promenata i da se spoi so master
+   - se stiska kopceto Create pull request (raboti nekoe vreme)
+     No conflicts with base branch
+     Merging can be performed automatically.
+
+19. Se pravat promeni i za drugite dve funkcii
+    git switch 5-filter-tasks-by-category
+    git fetch origin
+    ....
+    git switch 7-count-tasks-per-category
+    git fetch origin
+
+
+20. Merge na dva od trite Pull request-i
+   - se stiska kopceto Merge pull request
+     nudi korekcija na porakata za merge
+   - se stiska kopceto Confirm merge
+     Pull request successfully merged and closed
+     You're all set — the 1-remove-a-task-by-name branch can be safely deleted.
+   vo Kanban taskot se prefrlil avtomatski vo Done kolonata
+
+21. Dvata issues se vo Done kolonata.
+
+22. git switch master
+    git merge 7-count-tasks-per-category
+
+23. Da se sinhronizirta so remot repository
+    git pull origin master
+    git push origin master
+
+24. Prefrleni se vo Done
+
+25. Kreirana datoteka logs.txt so izvrsena komanda
+    git log --oneline --graph --all
+    Dodadena datoteka 236084.txt
+    git add 236084.txt
+    git commit -m "Added 236084.txt"
+    git push origin master
+
+26. Sinhronizirana sodrzinata na master so remote origin master
+
+
+
+
